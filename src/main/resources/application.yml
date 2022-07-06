@@ -2,9 +2,13 @@ server:
  port: 8888
 spring:
  profiles:
-  active: native
+  active: dev
  cloud:
   config:
    server:
-    native:
-     searchLocations: file:///C://Users/nisarab198/personal/PersonalOnIntelliJ/ConfigServer/src/main/resources/config/licensingservice
+    git:
+     uri: https://github.com/nisarjava/config-repo.git
+    searchPaths: licensingservice
+    username: native-cloud-apps
+    password: 0ffended
+    default-label: dev
