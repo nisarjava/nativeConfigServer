@@ -6,4 +6,4 @@ spring.datasource.password: "rootpwd"
 spring.datasource.testWhileIdle: "true"
 spring.datasource.validationQuery: "SELECT 1"
 spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.MySQLDialect"
-#postgres://postgres:postgrespw@postgres:5432
+spring.jpa.properties.hibernate.SHOW_SQL: "true"
